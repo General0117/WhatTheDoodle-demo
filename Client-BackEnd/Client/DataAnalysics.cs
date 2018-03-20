@@ -15,13 +15,13 @@ namespace Client
         public String AnalysicsName;
         public String AnalysicsMessage;
         public int[,] Location = new int[10, 2];
-        public string[] PlayerRoom = new string[5];
-        public string[] PlayerName = new string[5];
-        public string[] PlayerScore = new string[5];
+        public string[] PlayerRoom = new string[6];
+        public string[] PlayerName = new string[6];
+        public string[] PlayerScore = new string[6];
         public string word;
-        public int[] RoomNumber = new int[10];
-        public int[] RoomPlayerNum = new int[10];
-        public int[] Roomstate = new int[10];//游戏状态
+        public int[] RoomNumber = new int[9];
+        public int[] RoomPlayerNum = new int[9];
+        public int[] Roomstate = new int[9];//游戏状态
         public DataAnalysics()
         {
 
@@ -105,7 +105,7 @@ namespace Client
 
             //AnalysicsName = Encoding.UTF8.GetString(PendData, 2, 4);
             int n = 0;
-            for (int i = 3; i <= 32; i++)
+            for (int i = 2; i <= 38; i++)
             {
                 PlayerRoom[n] = PendData.Substring(i, 1);
                 PlayerName[n] = PendData.Substring(i+1, 4);
@@ -117,7 +117,7 @@ namespace Client
         {
             AnalysicsName = PendData.Substring(2, 4);
             int j = 0;
-            for(int i = 6;i<=36;i+=3)
+            for(int i = 6;i<=33;i+=3)
             {
                 RoomNumber[j] = Convert.ToInt32(PendData.Substring(i, 1));
                 RoomPlayerNum[j] = Convert.ToInt32(PendData.Substring(i+1, 1));

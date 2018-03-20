@@ -15,9 +15,9 @@ namespace Client
         public String Name;
         public String Message;
         public int[,] Location = new int[10, 2];
-        public int[] PlayerRoom = new int[5];
-        public string[] PlayerName = new string[5];
-        public int[] PlayerScore = new int[5];
+        public int[] PlayerRoom = new int[6];
+        public string[] PlayerName = new string[6];
+        public int[] PlayerScore = new int[6];
         public PackData(string Flag)
         {
             this.Flag = Flag;
@@ -64,20 +64,17 @@ namespace Client
         public void PackData4()
         {
             result = Flag + Roomnumber + Name;
-            int key = 5;
-            for(int i=0;i<=9;i++)
-                for(int j =0;j<=1;j++)
+            for (int i = 0; i <= 9; i++)
+                for (int j = 0; j <= 1; j++)
                 {
-                    string lo1, lo2, lo3, lo4; 
-                    int temp = Location[i, j]; 
+                    string lo1, lo2, lo3, lo4;
+                    int temp = Location[i, j];
                     lo1 = Convert.ToString(temp / 1000);
                     lo2 = Convert.ToString(temp % 1000 / 100);
                     lo3 = Convert.ToString(temp % 100 / 10);
                     lo4 = Convert.ToString(temp % 10);
                     result = result + lo1 + lo2 + lo3 + lo4;
-                    key = key + 4;
                 }
-
         }
         //public void PackData5()
         //{
