@@ -51,19 +51,19 @@ namespace Client
         }
         public void PackData1()
         {
-            result = Flag + Name;
+            result = Flag + Roomnumber + Name;
         }
         public void PackData2()
         {
-            result = Flag + Name;
+            result = Flag + Roomnumber + Name;
         }
         public void PackData3()
         {
-            result = Flag + Name + Message;
+            result = Flag +Roomnumber+Name + Message;
         }
         public void PackData4()
         {
-            result = Flag + Name;
+            result = Flag + Roomnumber + Name;
             int key = 5;
             for(int i=0;i<=9;i++)
                 for(int j =0;j<=1;j++)
@@ -85,7 +85,11 @@ namespace Client
         //}
         public void PackData6()
         {
-            result = Flag + Name;
+            result = Flag + Roomnumber + Name;
+        }
+        public void PackData7()
+        {
+            result = Flag + Roomnumber + Name;
         }
         public void PackdataError()
         {

@@ -19,6 +19,9 @@ namespace Client
         public string[] PlayerName = new string[5];
         public string[] PlayerScore = new string[5];
         public string word;
+        public int[] RoomNumber = new int[10];
+        public int[] RoomPlayerNum = new int[10];
+        public int[] Roomstate = new int[10];//游戏状态
         public DataAnalysics()
         {
 
@@ -50,6 +53,9 @@ namespace Client
                     break;
                 case "6":
                     AnalysicsData6();
+                    break;
+                case "7":
+                    AnalysicsData7();
                     break;
                 default:
                     AnalysicError();
@@ -107,9 +113,23 @@ namespace Client
                 n++;
             }
         }
-        public void AnalysicsData6()
+        public void AnalysicsData6()//大厅房间信息
         {
-            
+            AnalysicsName = PendData.Substring(2, 4);
+            int j = 0;
+            for(int i = 6;i<=36;i+=3)
+            {
+                RoomNumber[j] = Convert.ToInt32(PendData.Substring(i, 1));
+                RoomPlayerNum[j] = Convert.ToInt32(PendData.Substring(i+1, 1));
+                Roomstate[j] = Convert.ToInt32(PendData.Substring(i + 2, 1));
+                j++;
+            }
+
+        }
+        public void AnalysicsData7()
+        {
+            AnalysicsName = PendData.Substring(2, 4);
+            word = PendData.Substring(6, 10);
         }
         public void AnalysicError()
         {
