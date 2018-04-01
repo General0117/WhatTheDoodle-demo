@@ -1,0 +1,12 @@
+C:\Users\a1369\Desktop\项目1\你画我猜\你画我猜\bin\Release\你画我猜.exe.config
+C:\Users\a1369\Desktop\项目1\你画我猜\你画我猜\bin\Release\你画我猜.exe
+C:\Users\a1369\Desktop\项目1\你画我猜\你画我猜\bin\Release\你画我猜.pdb
+C:\Users\a1369\Desktop\项目1\你画我猜\你画我猜\obj\Release\你画我猜.allroom.resources
+C:\Users\a1369\Desktop\项目1\你画我猜\你画我猜\obj\Release\你画我猜.login.resources
+C:\Users\a1369\Desktop\项目1\你画我猜\你画我猜\obj\Release\你画我猜.Properties.Resources.resources
+C:\Users\a1369\Desktop\项目1\你画我猜\你画我猜\obj\Release\你画我猜.room.resources
+C:\Users\a1369\Desktop\项目1\你画我猜\你画我猜\obj\Release\你画我猜.csproj.GenerateResource.cache
+C:\Users\a1369\Desktop\项目1\你画我猜\你画我猜\obj\Release\你画我猜.csproj.CoreCompileInputs.cache
+C:\Users\a1369\Desktop\项目1\你画我猜\你画我猜\obj\Release\你画我猜.exe
+C:\Users\a1369\Desktop\项目1\你画我猜\你画我猜\obj\Release\你画我猜.pdb
+C:\Users\a1369\Desktop\项目1\你画我猜\你画我猜\obj\Release\你画我猜.csprojResolveAssemblyReference.cache
